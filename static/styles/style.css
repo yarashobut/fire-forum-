@@ -1,0 +1,108 @@
+/* 4chan-style CSS */
+
+body {
+    background-color: #eef2ff; /* Light blueish-gray */
+    color: #000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    height: 60px; 
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f0e0d6; /* Light beige */
+    border: 1px solid #d9bfb7;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #800000; /* Dark red */
+}
+
+/* New Thread Form */
+form {
+    background-color: #d6bfbf;
+    padding: 10px;
+    border: 1px solid #a89c94;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #a89c94;
+}
+
+form button {
+    background-color: #800000;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Thread List */
+.list-group {
+    padding: 0;
+}
+
+.list-group-item {
+    background-color: #f0e0d6;
+    border: 1px solid #d9bfb7;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.list-group-item:hover {
+    background-color: #decac2;
+}
+
+/* Thread View */
+.thread-box {
+    padding: 10px;
+    background-color: #d6bfbf;
+    border: 1px solid #a89c94;
+    margin-bottom: 20px;
+}
+
+.thread-box h2 {
+    font-size: 20px;
+    color: #800000;
+}
+
+/* Comments */
+.comment-box {
+    background-color: #e6d6d6;
+    border: 1px solid #a89c94;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+/* Buttons */
+.btn {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #a04040;
+}

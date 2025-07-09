@@ -1,0 +1,64 @@
+body {
+    background-color: #eef2ff; /* Light blueish-gray */
+    color: #000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    height: 60px; 
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f0e0d6; /* Light beige */
+    border: 1px solid #d9bfb7;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Thread Container */
+.thread {
+    background-color: #ffffff; /* White background for threads */
+    border: 1px solid #ccc; /* Light border */
+    padding: 10px; /* Space inside the thread */
+    margin: 10px 0; /* Space between threads */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* Post Styles */
+.post {
+    border: 1px solid #ddd; /* Subtle border around posts */
+    padding: 10px; /* Space inside posts */
+    margin: 5px 0; /* Space between posts */
+    background-color: #f9f9f9; /* Slightly darker background */
+}
+
+/* Username Styles */
+.username {
+    font-weight: bold; /* Bold usernames */
+    color: #007bff; /* Blue color for usernames */
+}
+
+/* Link Styles */
+a {
+    color: #007bff; /* Blue links */
+    text-decoration: none; /* No underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Styles */
+.footer {
+    font-size: 0.8em; /* Smaller footer text */
+    color: #777; /* Gray color */
+    text-align: center; /* Centered footer */
+}
+
+/* Other adjustments for images, quotes, etc. can be added here */

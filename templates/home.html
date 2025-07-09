@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/home.js') }}" defer></script>
+{% endblock %}
+
+{% block content %}
+
+    <!-- content moderation rulessss -->
+    <section class="rules">
+        <h2>Content Moderation Rules</h2>
+        <p>Swatchan is built for thoughtful questions, academic inquiries, and philosophical discussions.</p>
+        <p><strong>This is not a personal platform.</strong> We limit users from talking about themselves.</p>
+        <p>Comments/Threads that contain <strong>personal pronouns</strong> ("I, me, my, we, us, our, your, you") will be deleted.</p>
+    </section>
+
+    <!-- new Thread!  -->
+    <form id="new-thread-form">
+        <input type="text" id="author" placeholder="Your Name" required>
+        <input type="text" id="title" placeholder="Thread Title" required>
+        <textarea id="content" placeholder="Thread Content" required></textarea>
+        <button type="submit">Create Thread</button>
+    </form>
+
+    <!-- forum threads -->
+    <section class="threads">
+        <h2>Forum Threads</h2>
+        <div class="list-group">
+            {% for thread in threads %}
+                <div class="thread-item">
+                    <a href="{{ url_for('thread', thread_id=thread.id) }}" class="list-group-item">
+                        <h3>{{ thread.title }}</h3>
+                        <p>🗨️ <strong>{{ thread.comments|length }} Comments</strong> | 👍 <strong><span id="upvotes-{{ thread.id }}">{{ thread.upvotes }}</span> Upvotes</strong></p>
+                        <small>Created: {{ thread.created_at.strftime('%Y-%m-%d') }}</small>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+{% endblock %}

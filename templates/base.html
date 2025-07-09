@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swatchan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+{% endblock %}
+<body>
+
+    <div class="container">
+        <h1>
+            <img class="logo" src="{{ url_for('static', filename='images/swatchan.jpg') }}" alt="Swatchan Logo">
+            <a href="{{ url_for('home') }}"">Swatchan</a>
+        </h1>
+
+    {% block content %}
+    {% endblock %}
+    </div>
+
+</body>
+</html>
